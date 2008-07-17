@@ -7,14 +7,11 @@ AC_INIT(sipXBridge, 3.11.5, sipx-dev@list.sipfoundry.org)
 AC_CONFIG_AUX_DIR(config)
 m4_include([config/general.m4])
 m4_include([config/sipXlib.m4])
-m4_include([config/java.m4])
 
 SFAC_SIPX_INSTALL_PREFIX
 AM_INIT_AUTOMAKE(foreign)
 SFAC_AUTOMAKE_VERSION([1.6])
 CHECK_AUTOCONF
-# TODO: uncomment when it's been built on all platforms
-CHECK_JAIN_SIP
 
 # CHECK_RPM_DEBUG
 
